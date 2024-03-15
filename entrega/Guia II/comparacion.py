@@ -10,6 +10,11 @@ if mi_edad<su_edad:
      print("La diferencia de edad es de año")
 else:
  print("La diferencia de edad es de años")
+contraseña=str(input("Ingrese la contraseña: "))
+contraseña_guardada="asador"
+if contraseña==contraseña_guardada:
+   print("Contraseña Correcta")
+
 
     
  
