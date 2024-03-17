@@ -1,6 +1,5 @@
 número=float(input("Ingrese un número entero: "))
 if número / 2 == 0:
-    print("El número", número, "es par")
+    print(f"El número {número} es par")
 else:
-  print("El número", número, "es impar")
-  
+  print(f"El número {número} es impar")

@@ -3,6 +3,6 @@ edad_que_falta= 18-nombre
 if nombre>18:
  print("Tiene edad suficiente para conducir")
 else:
- print("Al usuario le faltan ",edad_que_falta)
+ print(f"Al usuario le faltan {edad_que_falta}")
 
 
