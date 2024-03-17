@@ -23,11 +23,11 @@ else:
 a=float(input("Ingrese el primer número: "))
 b=float(input("Ingrese el segundo número: "))
 if a > b:
- print(f"a es mayor que b. ")
+ print("a es mayor que b. ")
 elif a < b:
-   print(f"a es menor que b. ")
+   print("a es menor que b. ")
 else:
-   print(f"a es igual a b. ")
+   print("a es igual a b. ")
 
 
 

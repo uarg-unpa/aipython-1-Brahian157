@@ -25,4 +25,4 @@ salariomensual=100000
 eljuegotermino=3
 numeropar=10
 print()
-print("¿Cual es su nombre?",nombre,("¿Cómo se apellida?"),apellido,("¿Cuántos años tiene?"),edad)
+print(f"Hola mi nombre es {nombre}.\nY me apellido {apellido}.\nY tengo {edad} años.") 
