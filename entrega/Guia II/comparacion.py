@@ -11,9 +11,23 @@ if mi_edad<su_edad:
 else:
  print("La diferencia de edad es de años")
 contraseña=str(input("Ingrese la contraseña: "))
-contraseña_guardada="asador"
-if contraseña==contraseña_guardada:
-   print("Contraseña Correcta")
+contraseña_guardada="Programador"
+if contraseña.lower() == contraseña_guardada.lower():
+   print("La contraseña intruducida coincide.")
+else:
+   print("La contraseña ingresada no coincide.")
+print("La contraseña ingresada no coincide.")
+a=float(input("Ingrese el primer número: "))
+b=float(input("Ingrese el segundo número: "))
+if a > b:
+ print("a es mayor que b. ")
+elif a < b:
+   print("a es menor que b. ")
+else:
+   print("a es igual a b. ")
+
+
+
 
 
     

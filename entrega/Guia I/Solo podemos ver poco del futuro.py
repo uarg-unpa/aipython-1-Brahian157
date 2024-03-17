@@ -15,7 +15,6 @@ print(2*45)
 print(3/2)
 print(6**2)
 print(3//2)
-x="5"
 nombre=input("Ingrese su nombre: ")
 apellido=input("Ingrese su apellido: ")
 edad=input("Ingrese su edad: ")
