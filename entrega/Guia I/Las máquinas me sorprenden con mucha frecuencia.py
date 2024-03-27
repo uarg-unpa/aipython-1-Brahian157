@@ -1,0 +1,8 @@
+print("Las máquinas me sorprenden con mucha frecuencia.")
+print("")
+print("Soy Ezequiel")
+print("23",23)
+print("Una computadora puede ser llamada \"inteligente\" si logra engañar a una persona haciéndole creer que es un humano.")
+print("Brahian","Ezequiel",18,sep="_")
+print("libertad",1760,9400,sep="\t""\n")
+print("𝔽𝕖𝕝𝕚𝕫","𝕡𝕣𝕚𝕞𝕒𝕧𝕖𝕣𝕒","\t𝟚𝟘𝟚𝟜",sep="\n""\t")

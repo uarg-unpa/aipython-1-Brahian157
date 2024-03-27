@@ -1,0 +1,12 @@
+primer_producto=float(input("Ingrese el valor del primer producto: "))
+segundo_producto=float(input("Ingrese el valor del segundo producto: "))
+tercer_producto=float(input("Ingrese el valor del tercer producto: "))
+cuarto_producto=float(input("Ingrese el valor del cuarto producto: "))
+quinto_producto=float(input("Ingrese el valor del quinto producto: "))
+sexto_producto=float(input("Ingrese el valor del sexto producto: "))
+septimo_producto=float(input("Ingrese el valor del septimo producto: "))
+octavo_producto=float(input("Ingrese el valor del octavo producto: "))
+noveno_producto=float(input("Ingrese el valor del noveno producto: "))
+decimo_producto=float(input("Ingrese el valor del decimo producto: "))
+promedio_de_precios=(primer_producto + segundo_producto + tercer_producto + cuarto_producto + quinto_producto + sexto_producto + septimo_producto + octavo_producto + noveno_producto + decimo_producto)/10
+print("El promedio de precios los producto es: ",promedio_de_precios)
