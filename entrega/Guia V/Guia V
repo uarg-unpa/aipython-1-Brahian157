@@ -1,0 +1,114 @@
+lista_vacia = [] #1.
+
+lista_mas_siete = [1, 2, 3, 4, 5, 6, 7, 8, 9] #2.
+
+print(f"Longitud de la lista de la lista_mas_siete:", len(lista_mas_siete)) #3.
+
+frutas_favoritas = ["manzana", "banana", "uvas", "kiwi", "naranja"]#4.
+print("Longitud de la lista 'frutas_favoritas':", len(frutas_favoritas)) #a.
+primer_fruta_eliminada = frutas_favoritas.pop(0) #b.
+frutas_favoritas.append("durazno") #c.
+print("Fruta eliminada:", primer_fruta_eliminada)
+print("Lista de frutas actualizada:", end=" ")
+print(", ".join(frutas_favoritas))
+
+def mostrar_elementos(lista): #5.
+    print("Primer elemento:", lista[0])
+    if len(lista) % 2 == 0:
+        indice_medio = len(lista) // 2 - 1
+    else:  
+      indice_medio = len(lista) // 2
+    print("Elemento del medio:", lista[indice_medio], end=", ")
+    print("Último elemento:", lista[-1])
+
+mi_lista = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+mostrar_elementos(mi_lista)
+        
+    
+datos_personales = ["Pedro", 30, 1.75, "soltero", "Alberdi 195"] #6.
+
+companias_favoritas = ["Google", "Apple", "Microsoft", "Amazon", "Mercado Libre"] #7.
+
+print("a. Recorrer la lista y mostrar los datos:") #a.
+for compania in companias_favoritas:
+    print(compania)
+
+print("\nb. Recorrer la lista y mostrar el índice más el nombre de la compañía:") #b.
+for indice, compania in enumerate(companias_favoritas):
+    print(f"Índice {indice}: {compania}")
+
+companias_favoritas[1] = "Meta" #c.
+print("\nc. Lista de compañías modificada:")
+for compania in companias_favoritas:
+    print(compania)
+
+numeros = list(range(1, 11)) #8.
+
+print("Los tres primeros números son:", numeros[:3]) #a.
+
+letras = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j'] #9.
+
+
+print("Cada segundo elemento de la lista de letras:") #a.
+for i in range(0, len(letras), 2):
+    print(letras[i])
+
+ingredientes_chimichurri = ["perejil", "ajo", "orégano", "ají molido", "vinagre", "aceite de oliva", "sal", "pimienta"] #10.
+
+print("Ingredientes para chimichurri en forma inversa:") #a.
+print(", ".join(ingredientes_chimichurri[::-1]))
+
+palabras_favoritas = ["cancha", "pelota", "fútbol", "basquetbol", "arquero"] #11.
+
+sublista = palabras_favoritas[1:4] #a.
+print("Sublista desde la segunda hasta la cuarta palabra:", end=" ")
+print(", ".join(sublista))
+
+flores = ['rosas', 'orquídea', 'lirio', 'tulipan', 'margarita', 'dalia', 'hortensia'] #12.
+
+print("a. Mostrar tres elementos desde el tercer elemento:") #a.
+print(flores[2:5])
+
+print("\nb. Mostrar los elementos en posiciones pares desde la segunda posición:") #b.
+print(flores[1::2]) 
+
+print("\nc. Mostrar todos los elementos desde la primera posición saltando de a tres elementos:") #c.
+print(flores[::3])
+
+def contar_vocales(lista): #13.
+    vocales = {'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'}
+    contador_vocales = 0
+    for caracter in lista:
+        if caracter in vocales:
+            contador_vocales += 1
+    return contador_vocales
+lista_de_caracteres = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']
+cantidad_de_vocales = contar_vocales(lista_de_caracteres)
+print("Cantidad de vocales en la lista:", cantidad_de_vocales)
+
+def intercalar_listas(lista1, lista2): #14.
+    lista_resultante = []  
+    longitud_minima = min(len(lista1), len(lista2))  
+    for i in range(longitud_minima):
+        lista_resultante.append(lista1[i])  
+        lista_resultante.append(lista2[i])  
+    if len(lista1) > longitud_minima:
+        lista_resultante.extend(lista1[longitud_minima:])
+    elif len(lista2) > longitud_minima:
+        lista_resultante.extend(lista2[longitud_minima:])
+    return lista_resultante
+lista1 = [1, 3, 5, 7]
+lista2 = [2, 4, 6, 8, 10]
+lista_intercalada = intercalar_listas(lista1, lista2)
+print("Lista intercalada resultante:", lista_intercalada)
+
+def promedio(lista): #15.
+    if not lista:  
+        return None
+    
+    total = sum(lista) 
+    return total / len(lista) 
+
+numeros = [1, 2, 3, 4, 5]
+resultado = promedio(numeros)
+print("El promedio de la lista es:", resultado)
