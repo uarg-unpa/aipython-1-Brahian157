@@ -3,11 +3,13 @@ import random
 def lanzar_dado(caras):
     return random.randint(1, caras)
 
-def lanzar_dados(cantidad, caras):
-    return [lanzar_dado(caras) for _ in range(cantidad)]
-def calcular_resultados(resultados):
-    suma= sum(resultados)
-    promedio= sum / len(resultados)
-    maximo= max(resultados)
-    minimo= min(resultados)
-    return suma, promedio, maximo, minimo
+def main():
+    print("Bienvenido al Simulador de Lanzamientos de Dados")
+
+    cantidad_dados = int(input("Ingrese la cantidad de dados a lanzar: "))
+    caras_dado = int(input("Ingrese el número de caras de cada dado: "))
+    cantidad_lanzamientos = int(input("Ingrese la cantidad de lanzamientos a realizar: "))
+
+    
+
+        
