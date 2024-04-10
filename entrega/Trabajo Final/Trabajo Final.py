@@ -4,13 +4,24 @@ def lanzar_dado(caras):
     return random.randint(1, caras)
 
 def main():
+
     print("Bienvenido al Simulador de Lanzamientos de Dados")
 
     cantidad_dados = int(input("Ingrese la cantidad de dados a lanzar: "))
-    caras_dado = int(input("Ingrese el número de caras de cada dado: "))
+    tipo_dado = input("Seleccione el tipo de dado (6 para dado de 6 lados, cualquier otro número para dado personalizado): ")
+
+    if tipo_dado == '6':
+        caras_dado = 6
+    else:
+        caras_dado = int(input("Ingrese el número de caras de cada dado: "))
+
     cantidad_lanzamientos = int(input("Ingrese la cantidad de lanzamientos a realizar: "))
 
-    for lanzamiento in range(1, cantidad_lanzamientos + 1):
+    lanzamiento = 0  
+
+    while lanzamiento < cantidad_lanzamientos:  
+        lanzamiento += 1  
+
         resultados = [lanzar_dado(caras_dado) for _ in range(cantidad_dados)]
 
         print(f"\nLanzamiento {lanzamiento}:")
